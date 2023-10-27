@@ -1,0 +1,8 @@
+      /* CSS untuk tampilan desktop */
+      @media (min-width: 768px) {
+        .carousel-inner img {
+            max-width: 100%;
+            height: auto;
+            max-height: 600px; /* Sesuaikan tinggi sesuai kebutuhan Anda */
+        }
+    }
