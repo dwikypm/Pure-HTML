@@ -19,3 +19,12 @@ fetch('article.html')
     articleContent.innerHTML = data;
     })
     .catch(error => console.log(error));
+
+// Mengambil konten dari carousel.html menggunakan fetch
+fetch('/component/carousel.html')
+.then(response => response.text())
+.then(data => {
+    // Menambahkan konten dari carousel.html ke dalam elemen dengan id 'carouselContainer'
+    document.getElementById('carouselContainer').innerHTML = data;
+})
+.catch(error => console.log('Error:', error));
