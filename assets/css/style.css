@@ -1,0 +1,48 @@
+/* CSS untuk tampilan desktop */
+    @media (min-width: 768px) {
+        .carousel-inner img {
+            max-width: 100%;
+            height: auto;
+            max-height: 600px; /* Sesuaikan tinggi sesuai kebutuhan Anda */
+        }
+    }
+        /* Padding untuk tampilan mobile */
+        @media (max-width: 575px) {
+            .row>[class*="col-"] {
+                padding: 10px;
+            }
+        }
+
+        /* Atur lebar kartu untuk tampilan desktop */
+        @media (min-width: 576px) {
+            .row>[class*="col-"] {
+                padding: 2px; /* Padding yang lebih kecil untuk desktop */
+            }
+            .card {
+                width: 100%; /* Lebar penuh pada tampilan mobile */
+                margin-bottom: 10px; /* Margin bawah antara kartu pada tampilan mobile */
+            }
+        }
+
+        @media (min-width: 992px) {
+            .card {
+                width: calc(90% - 1px); /* Atur lebar kartu pada tampilan desktop */
+                margin: 5px; /* Atur margin antar kartu */
+            }
+        }
+
+    /* CSS Navbar */
+    .navbar-custom {
+        background-color: rgb(74, 74, 238); 
+    }
+    .navbar-custom .navbar-nav .nav-link {
+        color: white; 
+    }
+    
+    /* CSS untuk tampilan mobile */
+    @media (max-width: 576px) {
+        .row>[class*="col-"] {
+            padding: 10px; /* Menambahkan ruang dengan padding */
+        }
+    }
+
